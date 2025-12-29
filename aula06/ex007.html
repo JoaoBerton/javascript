@@ -12,13 +12,14 @@
     <div id="res">Resultado</div>
     <script>
         function somar() {
-            let n1 = window.document.getElementById('num1')
-            let n2 = window.document.getElementById('num2')
-            let res = window.document.getElementById('res')
+            let n1 = document.getElementById('num1')
+            let n2 = document.getElementById('num2')
+            let res = document.getElementById('res')
+
             let num1 = Number(n1.value)
             let num2 = Number(n2.value)
-            let s = n1 + n2
-            res.innerHtml= `A soma de ${n1} e ${n2} é igual a ${r}`
+            let s = num1 + num2
+            res.innerHTML= `A soma de ${num1} e ${num2} é igual a ${s}`
         }
     </script>
 </body>
