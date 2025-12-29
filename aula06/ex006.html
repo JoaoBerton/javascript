@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em JS</title>
+    <style>
+        body {
+            font: normal 15pt 'times';
+            background-color: darkcyan;
+            color: yellow;
+        }
+        div {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+        }
+        div#space {
+            background-color: rgb(88, 139, 139);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            line-height: 200px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Estamos testando funções em JS!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum animi possimus eligendi earum distinctio eius rerum porro tempora quo sequi quia soluta nesciunt, libero deserunt culpa, necessitatibus exercitationem laboriosam labore!</p>
+    <div id="space" class="ai" onclick="clicar()" onmouseout="sair()" onmouseenter="entrou()">Olá Mundo</div>
+    <script>
+        function clicar() {
+            let en = window.document.querySelector('div.ai')
+            en.innerText = 'Clicou!'
+            en.style.color = 'silver'
+        }
+        function sair() {
+         let sk = window.document.getElementById('space')
+         sk.innerText = 'Saiu!'
+         sk.style.color = 'darkblue'
+         sk.style.background = 'darkgray'
+        }
+        function entrou() {
+            let et = window.document.getElementsByClassName('ai')[0]
+            et.innerText = 'Entrou!'
+            et.style.color = 'gold'
+            et.style.background = 'darkred'
+            et.style.fontWeight = 'bolder'
+        }
+    </script>
+</body>
+</html>
