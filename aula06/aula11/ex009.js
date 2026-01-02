@@ -1,7 +1,7 @@
-let not = 75.8
-console.log(`A nota do aluno durante o trimestre foi: ${not}`)
-if(not => 65){
-    console.log(`Muito bem de acordo com a sua nota durante o trimesntre ${not}, você esta APROVADO!`)
+let pais = 'Brasil'
+console.log(`Vivendo no ${pais}`)
+if(pais == "Brazil"){
+    console.log(`Você é brasileiro!!`)
 } else{
-    console.log(`De acordo com sua nota ${not}, Você foi REPROVADO! `)
+    console.log(`Você é estrangeiro!!`)
 }
