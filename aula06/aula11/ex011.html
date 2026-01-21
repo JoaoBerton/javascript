@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: whitesmoke;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.3em;
+        }
+    </style>
+</head>
+<body>
+        <h1>Média Aluno</h1>
+        Digite a média: <input type="number" name="medx" id="media">
+        <input type="button" value="Checar" onclick="mediaAluno()">
+        <div id="res"></div>
+    <script>
+        function mediaAluno() {
+    let media_a = document.getElementById('media')
+    let res = document.getElementById('res')
+    media_a = Number(media.value)
+    res.innerHTML += `Média do aluno é: ${media_a}`
+
+    if (media_a > 60) {
+        res.innerHTML += `<p>Parabéns você foi <strong>Aprovado!</strong><p/>`
+    } else {
+        res.innerHTML += `<p>Infelismente você foi <strong>Reprovado!</strong></p>`
+    }
+        }
+    </script>
+</body>
+</html>
