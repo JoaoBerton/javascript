@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste em JS</title>
+</head>
+<body>
+    <h1>Verificação de Velocidade do seu carro!</h1>
+    Digite a sua Velocidade: <input type="number" name="Vel1" id="Vel"> em KM/h
+    <input type="button" value="calcular"  onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+let res = document.getElementById('res')
+        let vel = Number(document.getElementById('Vel').value)
+        console.log(`Sua velocidade atual é<strong> ${vel} Km/h</strong>`)
+        if (vel > 60) {
+            res.innerHTML+= `<p>Sua velocidade está acima do permitido! ${vel}. Por isso, você foi <strong>Multado</strong></p>`
+        } else {
+            res.innerHTML += `<p>Sua velocidade está dentro do padrão permitido! </p>`
+        }
+        res.innerHTML(`Dirija sempre usando cinto de segurança!`)
+        }
+    </script>
+</body>
+</html>
