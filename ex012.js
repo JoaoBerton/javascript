@@ -1,7 +1,7 @@
 /*Programa que verifica se o usuário está apto ou não para votar.*/
 const nome = "João Vitor"
 const idade = 25
-console.log(`Olá ${nome}, você tem ${idade} anos de idade.`)
+    console.log(`Olá ${nome}, você tem ${idade} anos de idade.`)
 /*Abaixo: está verificando três condiçãoes que podem ou não satisfazer o programa;
     1°-Se o usuário tem idade menor de 18 anos.
     2°-Se o usuário tem idade maior ou igual a 16 anos.
