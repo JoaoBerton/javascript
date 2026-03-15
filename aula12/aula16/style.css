@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    padding: 10px;
+    background-attachment: fixed;
+    background-color: beige;
+}
+header {
+    padding:20px;
+    margin: 20px;
+    margin: auto;
+    text-align: center;
+    width: 550px;
+    background-color: blanchedalmond;
+    border: dashed, rgb(184, 220, 252), 2px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+p.personal {
+   text-align: right;
+   padding: 5px;
+}
+section {
+    text-align: center;
+    background-color: rgb(175, 165, 153);
+    margin: 15px;
+    margin: auto;
+    margin-top: 15px;
+    width: 500px;
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.381);
+    border: 0.5px solid rgba(128, 105, 105, 0.316);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 10px;
+}
+input {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.305);
+    border: 1px solid black;
+    border-bottom-left-radius: 15px;
+}
+input#botao:hover {
+    background-color: rgb(95, 95, 202);
+    color: aliceblue;
+    transition-duration: 1s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.305);
+}
+input#botao:active {
+    background-color: red;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342);
+}
