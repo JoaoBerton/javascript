@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Domine:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --fund_color: #776CA0;
+    --world_color: #F5E653;
+    --elements_color: #B5AE6B;
+    --small_detals: #7753F5;
+    --complement_color: #757363;
+
+    --principal_font: "Noto Sans", sans-serif;
+    --secundary_font: "Bitter", serif;
+    --terciary_font: "Domine", serif;
+    --quaternary_font: "Cinzel", serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--principal_font);
+}
+body {
+    background-color: var(--fund_color);
+    width: 100vp;
+    color: var(--world_color);
+    text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.349);
+}
+h1 {
+    text-align: center;
+    font-family: var(--terciary_font);
+    font: normal, 2em;
+}
+p {
+    text-align: center;
+}
+#data_id {
+    padding: 7px;
+    margin: 10px;
+}
+#boxid {
+    text-align: center;
+    margin-left: 150px;
+}
+div {
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 40px;
+    background-color: beige;
+}
+div.title {
+    font-weight: normal;
+}
+.pers {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--complement_color);
+    color: var(--world_color);
+}
