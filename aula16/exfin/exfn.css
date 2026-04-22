@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Domine:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --fund_color: #4A5BCA;
+    --world_color: #555FA0;
+    --elements_color: #304AF4;
+    --small_detals: #525775;
+    --complement_color: #272933;
+
+    --principal_font: "Noto Sans", sans-serif;
+    --secundary_font: "Bitter", serif;
+    --terciary_font: "Domine", serif;
+    --quaternary_font: "Cinzel", serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--principal_font);
+}
+body {
+    background-color: var(--elements_color);
+    width: 100vp;
+    color: var(--complement_color);
+    text-shadow: 2px 0px 5px rgba(255, 255, 255, 0.471);
+}
+h1 {
+    text-align: center;
+    font-family: var(--terciary_font);
+    font: normal, 2em;
+    margin: 25px;
+}
+#caixa {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15px;
+}
+p {
+    text-align: center;
+    margin: 10px;
+}
+#data_id {
+    padding: 7px;
+    margin: 10px;
+}
+#boxid1 {
+    margin: 15px;
+    text-align: left;
+    margin-left: -150px;
+    width: 140px;
+    height: 150px;
+}
+div {
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 40px;
+    background-color: beige;
+}
+div.title {
+    font-weight: normal;
+}
+.but:hover {
+    background-color: var(--small_detals);
+    color: whitesmoke;
+    padding: 3px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.pers {
+    border: 2px solid var(--world_color);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--complement_color);
+    color: var(--world_color);
+}
